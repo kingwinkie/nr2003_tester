@@ -3,7 +3,7 @@
 
 So as I am getting back into Papyrus NR2003. I seemed to have misplaced some CSV’s that I made for the tester~05.exe for nr2003.
 
-So I do this to give me a idea of what I was doing in in the edit. 
+So I do this to give me a idea of what I was doing in in the edit.  This is not fast but you can just start it and let it do it's thing
 
 So how to see what the csv edits were doing to the exe.
 
@@ -35,7 +35,7 @@ The window should look like this
 
 tester image
 
-You should now be able to search for values in the exe.
+You should now be able to search for values in the exe. You may see a " not responding " message on tester but it is making a REALLY big txt file (see out.rar) so for a old vb program it will finish
 
 If you input a range of -10000 in the first box and 10000 in the second it will find everything between those 2 values and output it to a csv file.
 
@@ -49,6 +49,24 @@ After you have created your csv all you need to do is find what you are looking 
 You should be able to use whatever you are comfortable with. Database /sql/excel/notepad++ etc and  even if the file is small enough windows notepad will search it.
 
 I have included in this sample a bash file that should return the exe csv as well as the garage csv. The bash sh file should not only run on Linux it should also run under WSL and I have ran it under Git Bash on windows 10.
+
+Right Click in the folder and select " Open Git Bash here "
+
+When the promt opens type "bash run.sh "
+
+This will run run.sh witch will inturn run garage.sh that will give you the values for " ~Original - Garage Settings - EXE.csv " and then it will run nr2003exe.sh that will return " ~Original - EXE.csv "
+
+Gotcha's and things that happen
+
+Tester will only try and return " sing " values so if the csv value is a doub or long the number will be " odd " . Now this is not much of a thing as it will always retung the same odd number. So the stock number for long/doub is also odd but it should always be the same.
+
+"&H300D9" will return "Sing",9.10844E-44," when the ~Original - EXE.csv has a value of  65. So a stock value will always return Sing",9.10844E-44
+
+&H value/lines missing and error's printing to console.
+
+Error's are all/mostly about when it does not return a value there always seems to be at least one in  nr2003exe.sh also sometimes it just will drop a value and it just won't be there.
+
+I did this fast and ugly but it seems to work "good enough" 
 
 There are MORE things that can be enabled as well. So feel free to explore.
 

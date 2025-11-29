@@ -1,2 +1,2 @@
-bash ./patchg.sh >FAIRLIGHT_garage.csv
-bash ./patchp.sh >FAIRLIGHT_exe.csv
+bash ./garage.sh >fairlight_garage.csv
+bash ./nr2003exe.sh >fairlight_exe.csv
