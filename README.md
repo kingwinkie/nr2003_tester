@@ -1,5 +1,15 @@
 # nr2003_tester
 
+Update Jan 31 2026
+Added tester.exe
+
+Redid the bash scripts to fix errors and get more lines out. 
+
+I also found a csv that had another field in the tire section (feild 37). So I added it to the search script.
+
+While I think I know where it came from I am going to reachout and I'll see if I get a response
+
+Original Post Below
 
 So as I am getting back into Papyrus NR2003. I seemed to have misplaced some CSV’s that I made for the tester~05.exe for nr2003.
 
